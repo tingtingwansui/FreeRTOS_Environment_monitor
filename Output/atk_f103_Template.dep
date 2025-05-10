@@ -1,6 +1,6 @@
 Dependencies for Project 'atk_f103', Target 'Template': (DO NOT MODIFY !)
 F (..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm\startup_stm32f103xb.s)(0x674672B6)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_Template-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527" --pd "STM32F10X_MD SETA 1"--list ..\..\output\startup_stm32f103xb.lst --xref -o ..\..\output\startup_stm32f103xb.o --depend ..\..\output\startup_stm32f103xb.d)
-F (..\..\Users\main.c)(0x681EF54D)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I ..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I ..\..\Drivers\CMSIS\Include -I ..\..\Drivers -I ..\..\Users -I ..\..\Middlewares -I ..\..\Middlewares\FreeRTOS\include -I ..\..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM3-I.\RTE\_Template-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
+F (..\..\Users\main.c)(0x681F0051)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I ..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I ..\..\Drivers\CMSIS\Include -I ..\..\Drivers -I ..\..\Users -I ..\..\Middlewares -I ..\..\Middlewares\FreeRTOS\include -I ..\..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM3-I.\RTE\_Template-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
 I (..\..\Drivers\./SYSTEM/sys/sys.h)(0x681DAB61)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x6815A0D3)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x67467BB8)
@@ -69,7 +69,7 @@ I (..\..\Drivers\./BSP/ATK_AHT20/atk_aht20.h)(0x6746CFCE)
 I (..\..\Drivers\./BSP/IIC/myiic.h)(0x681DF91C)
 I (..\..\Drivers\./BSP/ATK_AIR/atk_air.h)(0x680460DF)
 I (..\..\Drivers\./BSP/ATK_FIRE/atk_fire.h)(0x6816F5B9)
-I (..\..\Drivers\./BSP/ATK_24CXX/atk_24cxx.h)(0x681ED9F2)
+I (..\..\Drivers\./BSP/ATK_24CXX/atk_24cxx.h)(0x681F005C)
 I (..\..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x674672B6)
 I (..\..\Users\FreeRTOSConfig.h)(0x681DAAF2)
 I (..\..\Middlewares\FreeRTOS\include\projdefs.h)(0x674672B6)
@@ -1704,7 +1704,7 @@ I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x674672B6)
 I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x674672B6)
 I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h)(0x674672B6)
 I (..\..\Drivers\./BSP/ADC/adc.h)(0x681DECFF)
-F (..\..\Drivers\BSP\ATK_24CXX\atk_24cxx.c)(0x681EF077)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I ..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I ..\..\Drivers\CMSIS\Include -I ..\..\Drivers -I ..\..\Users -I ..\..\Middlewares -I ..\..\Middlewares\FreeRTOS\include -I ..\..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM3-I.\RTE\_Template-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ..\..\output\atk_24cxx.o --omf_browse ..\..\output\atk_24cxx.crf --depend ..\..\output\atk_24cxx.d)
+F (..\..\Drivers\BSP\ATK_24CXX\atk_24cxx.c)(0x681EFA1C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include -I ..\..\Drivers\STM32F1xx_HAL_Driver\Inc -I ..\..\Drivers\CMSIS\Include -I ..\..\Drivers -I ..\..\Users -I ..\..\Middlewares -I ..\..\Middlewares\FreeRTOS\include -I ..\..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM3-I.\RTE\_Template-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keil5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ..\..\output\atk_24cxx.o --omf_browse ..\..\output\atk_24cxx.crf --depend ..\..\output\atk_24cxx.d)
 I (..\..\Drivers\./BSP/IIC/myiic.h)(0x681DF91C)
 I (..\..\Drivers\./SYSTEM/sys/sys.h)(0x681DAB61)
 I (..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x6815A0D3)
@@ -1761,7 +1761,7 @@ I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h)(0x674672B6)
 I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h)(0x674672B6)
 I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h)(0x674672B6)
 I (..\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h)(0x674672B6)
-I (..\..\Drivers\./BSP/ATK_24CXX/atk_24cxx.h)(0x681ED9F2)
+I (..\..\Drivers\./BSP/ATK_24CXX/atk_24cxx.h)(0x681F005C)
 I (..\..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x674672B6)
 I (..\..\Users\FreeRTOSConfig.h)(0x681DAAF2)
 I (..\..\Drivers\./SYSTEM/usart/usart.h)(0x674672B6)
@@ -2650,4 +2650,4 @@ I (..\..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x674672B6)
 I (..\..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x674672B6)
 I (..\..\Middlewares\FreeRTOS\include\task.h)(0x674672B6)
 I (..\..\Middlewares\FreeRTOS\include\list.h)(0x674672B6)
-F (..\..\readme.txt)(0x6815997F)()
+F (..\..\readme.txt)(0x681EFBED)()

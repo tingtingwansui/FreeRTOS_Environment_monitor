@@ -177,7 +177,7 @@ void atk_24cxx_eeprom_init(void)
  */
 void buffer_current_reading(void)
 {
-    printf("EEPROM存储数据,温度：%.1f,湿度：%.1f,空气质量：%.1f,火焰强度：%d\r\n",temperature, humidity, ppm, fire);
+    //printf("EEPROM存储数据,温度：%.1f,湿度：%.1f,空气质量：%.1f,火焰强度：%d\r\n",temperature, humidity, ppm, fire);
     Record r = { temperature, humidity, ppm, fire };
     uint16_t addr = EE_START_ADDR + 2 + ee_write_index * EE_RECORD_SIZE;
     atk_24cxx_write(addr, (uint8_t *)&r, EE_RECORD_SIZE);

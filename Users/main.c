@@ -322,22 +322,16 @@ void oled_display_task(void *pvParameters)
 void eeprom_task(void *pvParameters)
 {
     Record rec;
-    uint8_t t=0;
     while(1)
     {
         if (!network_connected() || is_connected==false) {
-            printf("断开连接，存储一次数据,%u\r\n",t);
             // 断网或 MQTT 未连接时，缓存数据
-            if(++t==5)
-            {
-              buffer_current_reading();
-              t=0;
-            }
+            buffer_current_reading();
         } else {
             // 已连接时，循环上传所有缓存
             while (has_buffered_data()==true) {
                 read_next_record(&rec);
-                printf("正在上传数据\r\n");
+                //printf("正在上传数据\r\n");
                 // 按原格式分两段上传
                 char payload1[128];
                 snprintf(payload1, sizeof(payload1),
@@ -356,10 +350,10 @@ void eeprom_task(void *pvParameters)
                     "}}",
                     rec.temperature, rec.humidity);
                 MQTT_Publish("$sys/awWUvMdMC1/test/thing/property/post", payload2, 0, 1000);
-                printf("上传数据完成\r\n");
+                //printf("上传数据完成\r\n");
             }
         }
-        vTaskDelay(pdMS_TO_TICKS(1000)); // 1s 周期
+        vTaskDelay(pdMS_TO_TICKS(5000)); // 2s 周期
     }
 }
 
@@ -372,7 +366,7 @@ void mqtt_upload_task(void *pvParameters)
 {
     while (1) {
         if (!MQTT_IsConnected()) {
-            printf("重新连接\r\n");
+            //printf("重新连接\r\n");
             vTaskDelay(pdMS_TO_TICKS(3000));
             MQTT_Connect(&mqtt_default_config);
             vTaskDelay(pdMS_TO_TICKS(2000));
@@ -425,7 +419,7 @@ void data_acquisition_task(void *pvParameters)
         printf("有害气体的平均浓度：%0.3fppm\r\n", ppm);   //0~2000
         printf("火焰强度值：%d%%\r\n", fire);              
         printf("\r\n");
-        vTaskDelay(1000);
+        vTaskDelay(2000);
     }
 }
 
