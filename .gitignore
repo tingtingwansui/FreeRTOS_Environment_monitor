@@ -1,0 +1,13 @@
+# Keil/MDK、STM32CubeMX 等常见目录
+*.o
+*.elf
+*.axf
+*.map
+build/
+.vs/
+.idea/
+*.log
+
+# 系统文件
+*.swp
+.DS_Store
